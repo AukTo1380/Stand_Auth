@@ -28,7 +28,7 @@ const userSchema =new Schema({
     resetPasswordToken:String,
     resetPasswordExpires:Date,
     verificationToken:String,
-    verificationExpires:Date
+    // verificationExpires:Date
 
 },{timestamp:true})
 
