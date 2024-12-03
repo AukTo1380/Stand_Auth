@@ -9,22 +9,18 @@ dotenv.config();
 
 const app = express();
 const PORT= process.env.PORT || 4000;
-// middleware for parsing json data in incoming requests    
-app.use(express.json()); // allow us to parse inocoming requsert: req.body.json
+app.use(express.json());
+
 
 
 app.get('/', (req, res) => {
-    console.log("Hello world");
-    res.send("Hello world"); // Send a response to the client
+    console.log("  text for tesitng the request to http  ");
+    res.send("Hello world its working for now and i want to be "); // Send a response to the client
 });
 
 
-
-
-
-
 app.use("/api/auth",authRoutes)
-
+app.use("api/addordders",authRoutes)
 
 
 
